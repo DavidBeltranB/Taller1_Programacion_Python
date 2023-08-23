@@ -1,0 +1,14 @@
+import sys
+
+estatura = float(input("Escribe tu Estatura en metros "))
+peso = float(input("Escribe tu peso kg "))  
+edad = int(input("Escribe tu edad "))
+
+imc = peso / (estatura ** 2)
+
+if edad < 45 and imc < 22.0:
+  print("Riesgo bajo")
+elif edad >= 45 and imc < 22.0:  
+  print("Riesgo medio")
+else:
+  print("Riesgo alto")
