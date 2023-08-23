@@ -1,0 +1,14 @@
+import sys
+
+a = float(input("Digite Lado a "))
+b = float(input("Digite Lado b "))
+c = float(input("Digite Lado c "))
+
+if a + b <= c or a + c <= b or b + c <= a:
+  print("No es un triangulo valido")
+elif a == b and b == c:
+  print("El triangulo es equilatero")
+elif a == b or b == c or a == c:
+  print("El triangulo es isoceles")
+else:
+  print("El triangulo es escaleno")
