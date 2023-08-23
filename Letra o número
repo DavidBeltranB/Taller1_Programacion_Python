@@ -1,0 +1,12 @@
+import sys
+
+c = input("Digita un Caracter ")[0]
+
+if c >= '0' and c <= '9':
+  print("Es numero")
+elif c >= 'A' and c <= 'Z':
+  print("Es letra mayuscula")  
+elif c >= 'a' and c <= 'z':
+  print("Es letra minuscula")
+else:
+  print("No es letra ni numero")
