@@ -1,0 +1,15 @@
+import sys
+
+dividendo = int(input("Dividendo: "))
+divisor = int(input("Divisor: "))
+
+cociente = dividendo // divisor
+residuo = dividendo % divisor
+
+if residuo == 0:
+  print("La division es exacta.")
+else:
+  print("La division no es exacta.")
+  
+print("Cociente:", cociente)
+print("Residuo:", residuo)
