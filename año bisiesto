@@ -1,0 +1,14 @@
+import sys
+
+año = int(input("Digite el Año "))
+
+if año % 4 == 0:
+  if año % 100 == 0:
+    if año % 400 == 0:
+      print(str(año) + " es bisiesto")
+    else:
+      print(str(año) + " no es bisiesto")
+  else:
+    print(str(año) + " es bisiesto")
+else:
+  print(str(año) + " no es bisiesto")
